@@ -1,0 +1,252 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 9
+Title "A200 12 watt class AB tube amp"
+Date "2021-06-19"
+Rev "0"
+Comp ""
+Comment1 "creativecommons.org/licenses/by/4.0/"
+Comment2 "License: CC by 4.0"
+Comment3 "Author: Jordan Aceto"
+Comment4 ""
+$EndDescr
+Text HLabel 2800 3500 0    50   Input ~ 0
+FET_input_stage_in
+Text HLabel 8750 4100 2    50   Output ~ 0
+FET_input_stage_out
+$Comp
+L Device:Q_NMOS_DGS Q1
+U 1 1 60E0C151
+P 4050 3500
+F 0 "Q1" H 4254 3546 50  0000 L CNN
+F 1 "LND150" H 4254 3455 50  0000 L CNN
+F 2 "" H 4250 3600 50  0001 C CNN
+F 3 "~" H 4050 3500 50  0001 C CNN
+	1    4050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 60E0E563
+P 4150 2700
+F 0 "R5" H 4220 2746 50  0000 L CNN
+F 1 "100k 1W" H 4220 2655 50  0000 L CNN
+F 2 "" V 4080 2700 50  0001 C CNN
+F 3 "~" H 4150 2700 50  0001 C CNN
+	1    4150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 60E0E82E
+P 4150 4650
+F 0 "R6" H 4220 4696 50  0000 L CNN
+F 1 "330R" H 4220 4605 50  0000 L CNN
+F 2 "" V 4080 4650 50  0001 C CNN
+F 3 "~" H 4150 4650 50  0001 C CNN
+	1    4150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60E0F819
+P 3150 3500
+F 0 "R4" V 2943 3500 50  0000 C CNN
+F 1 "330R" V 3034 3500 50  0000 C CNN
+F 2 "" V 3080 3500 50  0001 C CNN
+F 3 "~" H 3150 3500 50  0001 C CNN
+	1    3150 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 60E121A8
+P 7700 3600
+F 0 "RV1" H 7630 3554 50  0000 R CNN
+F 1 "100k L" H 7630 3645 50  0000 R CNN
+F 2 "" H 7700 3600 50  0001 C CNN
+F 3 "~" H 7700 3600 50  0001 C CNN
+	1    7700 3600
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 60E128E2
+P 8350 4100
+F 0 "RV2" H 8280 4054 50  0000 R CNN
+F 1 "1M A" H 8280 4145 50  0000 R CNN
+F 2 "" H 8350 4100 50  0001 C CNN
+F 3 "~" H 8350 4100 50  0001 C CNN
+	1    8350 4100
+	1    0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 60E14B92
+P 3600 3900
+F 0 "D1" V 3646 3820 50  0000 R CNN
+F 1 "1N4148" V 3555 3820 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3600 3725 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3600 3900 50  0001 C CNN
+	1    3600 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 60E178AC
+P 6600 3100
+F 0 "C2" V 6348 3100 50  0000 C CNN
+F 1 "1n" V 6439 3100 50  0000 C CNN
+F 2 "" H 6638 2950 50  0001 C CNN
+F 3 "~" H 6600 3100 50  0001 C CNN
+	1    6600 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60E17CEC
+P 6600 4750
+F 0 "C3" H 6715 4796 50  0000 L CNN
+F 1 "4n7" H 6715 4705 50  0000 L CNN
+F 2 "" H 6638 4600 50  0001 C CNN
+F 3 "~" H 6600 4750 50  0001 C CNN
+	1    6600 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 60E182DF
+P 6100 4050
+F 0 "R7" V 5893 4050 50  0000 C CNN
+F 1 "270k" V 5984 4050 50  0000 C CNN
+F 2 "" V 6030 4050 50  0001 C CNN
+F 3 "~" H 6100 4050 50  0001 C CNN
+	1    6100 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 60E1862E
+P 7150 4750
+F 0 "R8" H 7220 4796 50  0000 L CNN
+F 1 "47k" H 7220 4705 50  0000 L CNN
+F 2 "" V 7080 4750 50  0001 C CNN
+F 3 "~" H 7150 4750 50  0001 C CNN
+	1    7150 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60E1C092
+P 5300 3100
+F 0 "C1" V 5048 3100 50  0000 C CNN
+F 1 "22n 400v" V 5139 3100 50  0000 C CNN
+F 2 "" H 5338 2950 50  0001 C CNN
+F 3 "~" H 5300 3100 50  0001 C CNN
+	1    5300 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 4600 7150 3100
+Wire Wire Line
+	7150 3100 6750 3100
+Wire Wire Line
+	6600 4600 6600 4050
+Wire Wire Line
+	6600 4050 6250 4050
+Wire Wire Line
+	7700 3450 7700 3100
+Wire Wire Line
+	7700 3100 7150 3100
+Connection ~ 7150 3100
+Wire Wire Line
+	6600 4050 7700 4050
+Wire Wire Line
+	7700 4050 7700 3750
+Connection ~ 6600 4050
+Wire Wire Line
+	5950 4050 5700 4050
+Wire Wire Line
+	5700 4050 5700 3100
+Wire Wire Line
+	5700 3100 6450 3100
+Wire Wire Line
+	5450 3100 5700 3100
+Connection ~ 5700 3100
+Wire Wire Line
+	6600 4900 6600 5150
+Wire Wire Line
+	6600 5150 7150 5150
+Wire Wire Line
+	7150 5150 7150 4900
+Wire Wire Line
+	8750 4100 8500 4100
+Wire Wire Line
+	8350 3950 8350 3600
+Wire Wire Line
+	8350 3600 7850 3600
+Wire Wire Line
+	7150 5150 8350 5150
+Wire Wire Line
+	8350 5150 8350 4250
+Connection ~ 7150 5150
+Text Notes 7750 3400 0    50   ~ 0
+tone
+Text Notes 8400 3900 0    50   ~ 0
+volume
+Wire Wire Line
+	3600 3750 3600 3500
+Wire Wire Line
+	3600 3500 3850 3500
+Wire Wire Line
+	3300 3500 3600 3500
+Connection ~ 3600 3500
+Wire Wire Line
+	3600 4050 3600 4300
+Wire Wire Line
+	3600 4300 4150 4300
+Wire Wire Line
+	4150 4300 4150 3700
+Wire Wire Line
+	4150 4500 4150 4300
+Connection ~ 4150 4300
+Wire Wire Line
+	4150 3300 4150 3100
+Wire Wire Line
+	2800 3500 3000 3500
+Wire Wire Line
+	5150 3100 4150 3100
+Connection ~ 4150 3100
+Wire Wire Line
+	4150 3100 4150 2850
+Text GLabel 4450 2150 2    50   Input ~ 0
+B+_5
+Wire Wire Line
+	4450 2150 4150 2150
+Wire Wire Line
+	4150 2150 4150 2550
+Wire Wire Line
+	6600 5150 4150 5150
+Wire Wire Line
+	4150 5150 4150 4800
+Connection ~ 6600 5150
+$Comp
+L power:GND #PWR0104
+U 1 1 60E55293
+P 4150 5400
+F 0 "#PWR0104" H 4150 5150 50  0001 C CNN
+F 1 "GND" H 4155 5227 50  0000 C CNN
+F 2 "" H 4150 5400 50  0001 C CNN
+F 3 "" H 4150 5400 50  0001 C CNN
+	1    4150 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5400 4150 5150
+Connection ~ 4150 5150
+Text Notes 6150 2750 0    50   ~ 0
+"tilt" tone control,\nsometimes called the\n"big muff-pi" tone \ncontrol
+$EndSCHEMATC
