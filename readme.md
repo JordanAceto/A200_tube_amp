@@ -2,6 +2,10 @@
 
 ## Built in the chassis of a cool looking vintage A200 signal generator
 
+![](./pics/chassis_angle.jpg)
+
+![](./pics/guts_angle.jpg)
+
 ---
 
 ## Features:
