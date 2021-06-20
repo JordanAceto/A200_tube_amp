@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 6 9
 Title "A200 12 watt class AB tube amp"
 Date "2021-06-19"
 Rev "0"

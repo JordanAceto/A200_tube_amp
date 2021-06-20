@@ -39,10 +39,44 @@ F2 "reverb_driver_in" I L 7650 2100 50
 F3 "reverb_out" O R 9150 2100 50 
 $EndSheet
 $Sheet
+S 3650 4400 1500 1000
+U 60F4C698
+F0 "trem_and_wet_dry_mixer" 50
+F1 "trem_and_wet_dry_mixer.sch" 50
+F2 "reverb_in" I L 3650 4550 50 
+F3 "dry_in" I L 3650 4750 50 
+F4 "mix_out" O R 5150 4500 50 
+$EndSheet
+$Sheet
+S 5650 4350 1500 1000
+U 60CDF3DA
+F0 "phase_inverter" 50
+F1 "phase_inverter.sch" 50
+F2 "phase_inverter_out_+" O R 7150 5000 50 
+F3 "phase_inverter_out_-" O R 7150 5200 50 
+F4 "phase_inverter_in" I L 5650 4500 50 
+$EndSheet
+$Sheet
+S 7650 4350 1500 1000
+U 60CDF465
+F0 "power_amp" 50
+F1 "power_amp.sch" 50
+F2 "power_amp_in_+" I L 7650 5000 50 
+F3 "power_amp_in_-" I L 7650 5200 50 
+F4 "power_amp_speaker_out_+" O R 9150 4500 50 
+F5 "power_amp_speaker_out_-" O R 9150 4800 50 
+$EndSheet
+$Sheet
 S 2950 6500 1500 1000
 U 60CDF546
 F0 "bias_generator_and_trem_oscillator.sch" 50
 F1 "bias_generator_and_trem_oscillator.sch" 50
+$EndSheet
+$Sheet
+S 1000 6500 1500 1000
+U 60CDF4F0
+F0 "power_supply" 50
+F1 "power_supply.sch" 50
 $EndSheet
 $Comp
 L A200_custom_misc_parts:audio_jack_switch J2
@@ -220,25 +254,6 @@ F 3 "" H 10450 4700 50  0000 C CNN
 	1    10450 4650
 	-1   0    0    -1  
 $EndComp
-$Sheet
-S 7650 4350 1500 1000
-U 60CDF465
-F0 "power_amp" 50
-F1 "power_amp.sch" 50
-F2 "power_amp_in_+" I L 7650 5000 50 
-F3 "power_amp_in_-" I L 7650 5200 50 
-F4 "power_amp_speaker_out_+" O R 9150 4500 50 
-F5 "power_amp_speaker_out_-" O R 9150 4800 50 
-$EndSheet
-$Sheet
-S 5650 4350 1500 1000
-U 60CDF3DA
-F0 "phase_inverter" 50
-F1 "phase_inverter.sch" 50
-F2 "phase_inverter_out_+" O R 7150 5000 50 
-F3 "phase_inverter_out_-" O R 7150 5200 50 
-F4 "phase_inverter_in" I L 5650 4500 50 
-$EndSheet
 Wire Wire Line
 	3650 4550 3300 4550
 Wire Wire Line
@@ -253,21 +268,6 @@ Wire Wire Line
 	3100 4750 3650 4750
 Wire Wire Line
 	5150 4500 5650 4500
-$Sheet
-S 3650 4400 1500 1000
-U 60F4C698
-F0 "trem_and_wet_dry_mixer" 50
-F1 "trem_and_wet_dry_mixer.sch" 50
-F2 "reverb_in" I L 3650 4550 50 
-F3 "dry_in" I L 3650 4750 50 
-F4 "mix_out" O R 5150 4500 50 
-$EndSheet
-$Sheet
-S 1000 6500 1500 1000
-U 60CDF4F0
-F0 "power_supply" 50
-F1 "power_supply.sch" 50
-$EndSheet
 $Comp
 L power:GND #PWR01
 U 1 1 60CE3E32
