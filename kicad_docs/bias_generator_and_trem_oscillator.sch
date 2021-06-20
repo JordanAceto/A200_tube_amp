@@ -626,4 +626,8 @@ Wire Wire Line
 	1550 3350 1700 3350
 Text Notes 4650 3250 0    118  ~ 0
 Tremolo oscillator
+Text Notes 5550 1600 0    50   ~ 0
+approx. range: [-40v, -20v]
+Text Notes 7450 1600 0    50   ~ 0
+approx. range: [-40v, -20v]
 $EndSCHEMATC
