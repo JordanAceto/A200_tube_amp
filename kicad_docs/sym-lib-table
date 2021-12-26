@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name A200_custom_valves)(type Legacy)(uri ${KIPRJMOD}/A200_custom_parts/A200_custom_valves.lib)(options "")(descr ""))
-  (lib (name A200_custom_misc_parts)(type Legacy)(uri ${KIPRJMOD}/A200_custom_parts/A200_custom_misc_parts.lib)(options "")(descr ""))
-)
